@@ -1,0 +1,84 @@
+/*-------------REQUIRES-------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800&display=swap');
+
+/*-------------RESETS-------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------------VARS------------*/
+
+:root{
+    --bg-color-primary: #cccccc;
+    --bg-color-secondary: #2D0C45;
+    --bg-color-tertiary: #DB0808;
+    --text-color-primary: #black;
+    --text-color-secondary: white;
+}
+
+/*-------------LABELS------------*/
+
+body{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: var(--text-color-primary);
+    background-color: var(--bg-color-primary);
+}
+h1{
+    font-weight: 800;
+    text-align: center;
+}
+h2{
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*-------------CLASS------------*/
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10%;
+    padding: 0 30px;
+}
+.input{
+    height: 200px;
+    background-color: var(--bg-color-secondary);
+    border: 0;
+    color: var(--text-color-secondary);
+    opacity: 0.5;
+    margin-bottom: 10px;
+    resize: none;
+    font-size: 20px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 45%;
+}
+.btn{
+    padding: 10px;
+    width: 40%;
+    align-self: center;
+    margin: 10px 0;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: var(--bg-color-tertiary);
+    color: var(--text-color-secondary);
+    border: 0;
+}
+.btn:hover{
+    background-color: var(--text-color-secondary);
+    color: var(--bg-color-tertiary);
+    transition: ease-in-out 0.2s;
+    box-shadow: 0px 0px 10px 0px var(--bg-color-secondary);
+}
+footer{
+    text-align: center;
+}
