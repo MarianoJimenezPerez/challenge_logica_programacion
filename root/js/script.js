@@ -91,7 +91,7 @@ function desencriptarTexto() {
         .replace(/imes/gi, "i")
         .replace(/ai/gi, "a")
         .replace(/ober/gi, "o")
-        .replace(/ufat/gi, "");
+        .replace(/ufat/gi, "u");
         resultado.innerHTML = textoDesencriptado;
     }
     if (corroborarCaracteres(inputTexto) == '1' || corroborarCaracteres(inputTexto) == '2'){
